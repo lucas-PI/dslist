@@ -1,0 +1,35 @@
+package com.devsuperior.dslist.entites.pk;
+
+import com.devsuperior.dslist.entites.Game;
+import com.devsuperior.dslist.entites.GameList;
+
+public class BelongingPK {
+
+
+    private Game game;
+    private GameList list;
+
+    public BelongingPK() {
+    }
+
+    public BelongingPK(Game game, GameList list) {
+        this.game = game;
+        this.list = list;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
+    public GameList getList() {
+        return list;
+    }
+
+    public void setList(GameList list) {
+        this.list = list;
+    }
+}
