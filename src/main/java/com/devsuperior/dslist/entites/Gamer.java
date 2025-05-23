@@ -1,9 +1,9 @@
-package entites;
+package com.devsuperior.dslist.entites;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_gamer")
+@Table(name = "tb_game")
 public class Gamer {
 
     @Id
@@ -15,6 +15,7 @@ public class Gamer {
     private String genre;
     private String platforms;
     private Double score;
+    @Column(name = "img_url")
     private String imgURL;
     @Column(columnDefinition = "TEXT")
     private String shortDescription;

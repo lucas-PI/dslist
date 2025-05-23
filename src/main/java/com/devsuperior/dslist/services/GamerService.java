@@ -1,9 +1,9 @@
-package services;
+package com.devsuperior.dslist.services;
 
-import entites.Gamer;
+import com.devsuperior.dslist.entites.Gamer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.GamerRepository;
+import com.devsuperior.dslist.repository.GamerRepository;
 
 import java.util.List;
 
