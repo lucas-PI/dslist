@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tb_game")
-public class Gamer {
+public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +22,11 @@ public class Gamer {
     @Column(columnDefinition = "TEXT")
     private String longDescription;
 
-    public Gamer() {
+    public Game() {
     }
 
-    public Gamer(Long idGame, String title, Integer year, String genre,
-                 String platforms, Double score, String imgURL, String shortDescription, String longDescription) {
+    public Game(Long idGame, String title, Integer year, String genre,
+                String platforms, Double score, String imgURL, String shortDescription, String longDescription) {
         this.idGame = idGame;
         this.title = title;
         this.year = year;

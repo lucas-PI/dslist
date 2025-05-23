@@ -1,19 +1,19 @@
 package com.devsuperior.dslist.services;
 
-import com.devsuperior.dslist.entites.Gamer;
+import com.devsuperior.dslist.entites.Game;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.devsuperior.dslist.repository.GamerRepository;
+import com.devsuperior.dslist.repository.GameRepository;
 
 import java.util.List;
 
 @Service
-public class GamerService {
+public class GameService {
     @Autowired
-    private GamerRepository gamerRepository;
+    private GameRepository gameRepository;
 
-    public List<Gamer> findALL(){
-        var list = gamerRepository.findAll();
+    public List<Game> findALL(){
+        var list = gameRepository.findAll();
         return list;
     }
 }
